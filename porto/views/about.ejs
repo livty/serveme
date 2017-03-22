@@ -1,0 +1,43 @@
+<% include ./partials/header %>
+
+<div class="ui main text container segment">
+    <form class="ui form" action="/puppy" method="GET">
+        <div class="field">
+        <label>Title</label>
+        <input type="text" placeholder="title" value="Web developer">
+        </div>
+        <div class="field">
+        <label>Skills</label>
+        <input type="text" value="JavaScript, Node, Espress, HTML/CSS, jQuery, Bootstrap, Semantic UI">
+        </div>
+        <div class="field">
+        <label>Store in</label>
+        <input type="text" value="MongoDB">
+        </div>
+          <div class="field">
+            <label>Random</label>
+            <textarea>
+            I love coffee
+            I love Node
+            Play around with API
+            And ocasionally travel in time
+            
+            Rhyming is not my strongest skill
+            But I like using HTML/CSS and chill
+            Don't forget about Express
+            How can I not mention JavaScript
+            Cause that stuff is lit
+            
+            Did I forget anything
+            Let's see
+            MongoDB to store the stuff
+            And thus let it be!
+            </textarea>
+        </div>
+        
+        <button class="ui black basic button" type="submit">Submit</button>
+        
+    </form>
+</div>
+
+<% include ./partials/footer %>

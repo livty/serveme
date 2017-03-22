@@ -1,0 +1,60 @@
+<% include ./partials/header %>
+
+
+
+
+      
+            <% sites.forEach(function(site){ %>
+            
+             <div class="ui compact segment">
+              <div class="ui  four page column stackable grid">
+ 
+               
+               <div class="one column row">
+             <div class="ui medium rounded images">
+             <img src="<%= site.image%>">
+              <img src="<%= site.picture %>">
+          
+               </div>
+               
+  </div>
+  <div class="six wide column">
+         <div><a class="ui medium center aligned header" href="/work/<%=site._id%>"><%=site.title%></a></div>
+          <%= site.body %>
+          
+         </div>
+         
+  <div class="six wide column">
+         
+          <%= site.more %>
+          
+         </div>
+         <div class="six wide column">
+         
+          <%= site.text %>
+          
+         </div>
+   <div class="column" >
+       <div class="ui large rounded images hidden">
+       <img src="<%= site.row%>"style="margin-left:45%;" >
+       </div>
+   </div>
+  <!-- <a class="ui orange button" href="/work/<%=site._id%>/edit">Edit</a>-->
+  </div>
+  
+
+           
+            
+         
+           
+           </div>
+           
+ 
+<% }); %>
+
+
+</div>
+</div>
+</div>
+
+    <% include ./partials/footer %>

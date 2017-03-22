@@ -1,0 +1,39 @@
+<% include ./partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header">Edit<%=site._id%></div>
+    <form class="ui form" action="/work/<%=site._id%>?_method=PUT" method="POST">
+        <div class="field">
+        <label>Title</label>
+        <input type="text" name="site[title]" value="<%=site.title%>">
+        </div>
+        <div class="field">
+        <label>Image</label>
+        <input type="text" name="site[picture]" value="<%=site.picture%>">
+        </div>
+        <div class="field">
+        <label>Picture</label>
+        <input type="text" name="site[image]" value="<%=site.image%>">
+        </div>
+         <div class="field">
+         <label>Row</label>
+        <input type="text" name="site[row]" value="<%=site.row%>">
+        </div>
+         
+        <div class="field">
+            <label>body</label>
+            <textarea name="site[body]"><%=site.body%></textarea>
+        </div>
+        <div class="field">
+            <label>text</label>
+            <textarea name="site[text]"><%=site.text%></textarea>
+        </div>
+         <div class="field">
+            <label>more</label>
+            <textarea name="site[more]"><%=site.more%></textarea>
+        </div>
+        
+        <button class="ui pink button" type="submit">Submit</button>
+        
+    </form>
+</div>
+<% include ./partials/footer %>

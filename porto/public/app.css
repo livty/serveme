@@ -1,0 +1,23 @@
+.text.container{
+    margin-top:10%;
+    width:40%;
+    color:white;
+    padding-left:1%;
+    padding-bottom: 1.5%;
+    padding-top: 1%;
+    margin-right:20%;
+}
+
+.menu{
+ height:5%;
+}
+
+.grid.container{
+    margin-top:5%;
+}
+.segment:nth-child(even){
+ background-image:url(http://i346.photobucket.com/albums/p402/livtylivty/old%20paper_zps89jrlu1l.jpg);
+
+}
+
+
